@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prod{
+    width: 400px;
+    perspective: 600px;
+}
+
+.prod img{
+    width: 100%;
+}
+
+.prod-scene{
+    position: relative;
+    transform: translateZ(-200px) rotateY(10deg);
+    transform-style: preserve-3d;
+    transition: transform 0.35s ease;
+}
+
+.prod-scene:hover{
+    transform: translateZ(-200px) rotateY(80deg);
+}
+
+.prod-left{
+    position: absolute;
+    top: 0;
+    transform:  rotateY(-90deg) translateZ(200px);
+}
+
+.prod-front{
+    transform: translateZ(200px);
+}
+
+.prod-front-data{
+    position: relative;
+}
+
+.prod-front-data h3{
+    background-color: rgb(37, 37, 37);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.prod-left-data{
+    position: relative;
+}
+
+.prod-front-data h3,
+.prod-left-data button{
+    position: absolute;
+    bottom: 25px;
+    color: aquamarine;
+    font-size: 1.50rem;
+    padding: 25px;
+    backdrop-filter: blur(3px);
+    margin: 0;
+    text-shadow: 1px 1px 10px aqua;
+    box-shadow: 0 0 2px aqua;
+}
+
+.prod-left-data button{
+ white-space: nowrap;
+ right: 0;
+ border: none;
+ background-color: rgb(37, 36, 36);
+ border-top-left-radius: 50px;
+ border-bottom-left-radius:50px ;
+ cursor: pointer;
+ transition: background-color 0.25s ease;
+ text-shadow: 1px 1px 10px aqua ;
+ box-shadow: 0 0 2px aqua;
+}
+
+.prod-left-data button:hover{
+   background-color: rgb(66, 64, 64);
+}
+
+.prod-info{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 35px;
+    backdrop-filter: blur(5px);
+    background-color:rgb(95, 179, 179);
+    text-shadow: 1px 1px 10px aqua;
+    box-shadow: 0 0 2px aqua;
+}
+
+.prod-info p{
+    font-size: 1,5rem;
+    color: azure;
+}
+
+.prod-info div{
+    font-size: 1,75rem;
+    color: azure;
+    display: flex;
+}
+
+.prod-info span{
+    text-align: center;
+    width: 50%;
+}
+
+.prod-info div,
+.prod-front-data h3,
+.prod-left-data button{
+    font-family: 'Open Sans', sans-serif;
+}

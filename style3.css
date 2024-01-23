@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    border: 5px solid rgb(20, 20, 20);
+    position: relative;
+}
+
+.relative{
+    width: 100px;
+    height: 100px;
+   background-color: tomato;
+   position: relative;
+   top: 100;
+   left: 150;
+   right: 150;
+   bottom: 0;
+   z-index: 100;
+}
+
+.absolute{
+    width: 100px;
+    height: 100px;
+   background-color: violet;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+
+.fixed{
+    width: 100px;
+    height: 100px;
+   background-color: yellowgreen;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
