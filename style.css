@@ -6,3 +6,13 @@
 .navbar .nav-link{
     border-radius: 1000px;
 }
+
+.navbar .dropdown-toggle::after{
+  border: none;
+  content: unset;
+}
+
+.navbar .dropdown-center .dropdown-menu{
+    transform: rotateX(-50%);
+    left: 50%;
+}
