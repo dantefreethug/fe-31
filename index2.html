@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Создания Hового Рецепта</h1>
+      <hr />
+      <form action="/index2.html">
+        <!--поля-->
+        <h2>Рецепт</h2>
+        <div class="field">
+          <label for="recipe-name">Название нового рецепта</label>
+          <input
+            type="text"
+            id="recipe-name"
+            name="recipe-name"
+            placeholder="Название"
+          />
+          <span class="info">обязательное поля. от 3 до 150 символов</span>
+          <span class="error">Требуется указать название</span>
+        </div>
+
+        <div class="field">
+          <label for="recipe-desc">Описание нового рецепта</label>
+          <textarea
+            id="recipe-desc"
+            cols="30"
+            rows="10"
+            name="recipe-desc"
+            placeholder="Текст"
+          ></textarea>
+          <span class="info">обязательное поля. От 10 до 500 символов</span>
+        </div>
+
+        <!--поля-->
+
+        <hr />
+
+        <!--инструкции по готовке-->
+        <h3>Порядок приготовления</h3>
+        <div class="field">
+          <label for="doc-name">Название пункта</label>
+          <input
+            type="text"
+            id="doc-name"
+            name="doc-name"
+            placeholder="Название"
+          />
+          <span class="info">обязательное поля. от 3 до 150 символов</span>
+        </div>
+
+        <div class="field">
+          <label for="doc-desc">Описание пункта</label>
+          <textarea
+            id="doc-desc"
+            cols="30"
+            rows="10"
+            name="doc-desc"
+            placeholder="Текст"
+          ></textarea>
+          <span class="info">обязательное поля. От 10 до 500 символов</span>
+        </div>
+        <button type="button" class="btn">Добавить</button>
+        <!--инструкции по готовке-->
+        <!--поля состава-->
+        <div class="field">
+          <label for="ingrid-name">Название Ингридиента</label>
+          <input
+            type="text"
+            id="ingrid-name"
+            name="ingrid-name"
+            placeholder="Название"
+            class="control"
+            value="4au"
+          />
+          <span class="error">В название указаны недопустимые символов</span>
+        </div>
+
+        <div class="field">
+          <label for="ingrid-amount">Название Ингридиента</label>
+          <input
+            type="number"
+            id="ingrid-amount"
+            name="ingrid-amount"
+            placeholder="Количество"
+            class="control"
+          />
+        </div>
+        <!--поля состава-->
+        <h3>Ингридиенты</h3>
+
+        <button type="submit" class="btn">Сохранить</button>
+      </form>
+    </div>
+  </body>
+</html>
