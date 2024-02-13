@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+#test-box:checked + div.test-box{
+  background-color: red;
+}
+
+
+.modal{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.modal #model-1-state{
+    display: none;
+}
+
+.modal .back{
+    background-color: rgba(141, 213, 247, 0.25);
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 110;
+    opacity: 0;
+    pointer-events: none;
+    transition: opaticy 0.15 ease;
+}
+
+.modal .dialog{
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    background-color: rgb(119, 138, 143);
+    top: -200vh;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: 120;
+    padding: 25px;
+    transition: top 0.5s ease;
+    pointer-events: none;
+}
+
+.modal .header{
+  border-bottom: 1px solid rgba 0 0 0 0.35;
+}
+
+.modal .body{
+    border-bottom: 1px solid rgba 0 0 0 0.35;
+    padding: 25px;
+}
+
+.modal .footer{
+ padding: 15px;
+}
+
+.modal #model-1-state:checked + .back{
+    opacity: 1;
+    pointer-events: none;
+}
+
+.modal #model-1-state:checked ~ .dialog{
+    top: 50%;
+    pointer-events: all;
+}
