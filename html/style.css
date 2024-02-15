@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.burger{
+    width: 80px;
+    height: 80px;
+    border-radius: 1px;
+    padding: 10px;
+    position: relative;
+}
+
+.burger > div{
+    height: 15px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    width: calc(100% - 20px);
+    transition: all 0.25s ease;
+}
+
+.burger > div:nth-child(2){
+    top:32px;
+}
+
+.burger > div:nth-child(3){
+    top:32px;
+}
+
+.burger > div:nth-child(4){
+    top:54px;
+
+}
+
+.burger:hover > div:nth-child(2){
+    transform: rotate(45deg);
+}
+
+.burger:hover > div:nth-child(3){
+    transform: rotate(-45deg);
+}
+
+.burger:hover > div:nth-child(1),
+.burger:hover > div:nth-child(4){
+    opacity: 0;
+}
+
+.menu{
+    background-color: bisque;
+    display: block;
+    padding: 0 15px;
+}
