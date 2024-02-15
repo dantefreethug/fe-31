@@ -74,4 +74,5 @@ body{
 .modal #model-1-state:checked ~ .dialog{
     top: 50%;
     pointer-events: all;
+    margin: 0;
 }
