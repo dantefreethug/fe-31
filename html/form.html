@@ -8,24 +8,32 @@
   </head>
   <body>
     <div class="menu">
-      <div class="burger">
+
+      <input type="checkbox" id="toggl">
+
+      <label class="burger" for="toggl">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
-      </div>
+      </label>
       <ul class="slide">
         <li>
           <a href="#">Дом</a>
         </li>
         <li>
-          <a href="#">О нас</a>
+          <a href="#" class="active">О нас</a>
         </li>
         <li>
           <a href="#">Каталог путешествий</a>
         </li>
       </ul>
-      <label class="back"></label>
+      <label class="back" for="toggl"></label>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
+
+
+
