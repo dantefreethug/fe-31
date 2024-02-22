@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2024 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="rss" unicode="&#xe800;" d="M0-16q0 55 39 94t94 39 94-39 39-94q0-56-39-95t-94-38-94 39-39 94z m0 335l0 191q179 0 331-88t241-241 88-331l-192 0q0 194-137 331-138 138-331 138z m0 339l0 192q203 0 388-79t319-214 214-319 79-388l-192 0q0 164-64 314t-172 258-258 172-314 64z" horiz-adv-x="1000" />
+
+<glyph glyph-name="steam-squared" unicode="&#xf1b7;" d="M693 489q0 45-32 76t-76 32-76-32-32-76q0-45 32-76t76-32 76 32 32 76z m-340-328q0-46-33-79t-78-32q-31 0-57 17t-40 43q29-12 54-23 34-13 67 1t48 48q13 34-1 67t-48 47l-46 19q12 2 23 2 46 0 78-32t33-78z m504 457v-536q0-66-47-113t-114-48h-535q-67 0-114 48t-47 113v86l96-39q11-51 52-85t94-33q58 0 101 39t49 96l192 141q84 0 143 59t59 142q0 84-59 142t-143 59q-82 0-141-58t-60-141l-125-180q-5 1-16 1-42 0-76-21l-166 67v261q0 66 47 113t114 48h535q67 0 114-48t47-113z m-138-130q0-56-39-95t-96-40-95 40-39 95 39 95 95 40q57 0 96-39t39-96z" horiz-adv-x="857.1" />
+
+<glyph glyph-name="telegram" unicode="&#xf2c6;" d="M664 121l82 386q5 25-6 36t-29 3l-482-185q-16-6-22-14t-2-15 18-11l124-38 286 180q12 8 18 3 4-3-3-8l-231-210-9-127q13 0 25 13l60 58 125-93q36-20 46 22z m336 229q0-102-40-194t-106-160-160-106-194-40-194 40-160 106-106 160-40 194 40 194 106 160 160 106 194 40 194-40 160-106 106-160 40-194z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
