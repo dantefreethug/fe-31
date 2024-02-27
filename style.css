@@ -1,92 +1,558 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
-
-*{
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-body{
+body {
+  height: 100%;
+}
+
+body .countainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5fr;
+  grid-template-columns: 1fr 5fr;
+}
+
+body .company {
+  background-color: whitesmoke;
+  border-right: 0.2em solid rgba(128, 128, 128, 0.753);
+  height: 100%;
+  position: fixed;
+}
+
+body .company a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
+  text-decoration: none;
 }
 
-.hr, .container{
-border-color: #dadada;
+body .company h1 {
+  margin: 1em;
+  margin-left: 2em;
+  margin-right: 4em;
 }
 
-.container{
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 14px -2px 28px 6px rgba(34, 60, 80, 0.2);
-  border: 2px rgb(75, 192, 201);
-  margin: 100px 0;
-  text-align: center;
-  border-width: 1px;
-  border-style: solid;
+body .company #point0 {
+  border-bottom: 0.16em solid #bbb7b7;
 }
 
-h1,h2,h3{
-  font-weight: 200;
-  text-shadow: 14px 2px 10px 6px;
-}
-
-.field{
+body .company .points {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
+  margin: 2em;
+  margin-left: 4em;
 }
 
-.field label{
- font-weight: 600;
- margin-bottom: 9px;
+body .company .points img {
+  width: 3em;
 }
 
-.field .info{
-  font-size: 0.75rem;
-  font-size: italic;
-  color: rgba(0, 0, 0, 0.65);
-  margin-top: 8px;
+body .company .points h3 {
+  font-weight: normal;
+  margin-top: 1em;
+  margin-left: 1em;
 }
 
-.field .error{
-  font-weight: 0.75rem;
-  font-size: 0.75rem;
-  color: rgba(208, 31, 31, 0.75);
-  margin-top: 8px;
+body .doshboard {
+  margin-left: 21em;
+  background-color: #d4d4d4;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
-.field .control{
-padding: 8px 10px;
-border-radius: 2.7px;
-border: 1px solid rgb(75, 192, 201);
-margin-bottom: 5px;
+body .doshboard header {
+  margin: 2em;
+  margin-left: 4em;
 }
 
-.field .control:active,
-.field .control:focus{
-    border-color: rgb(35, 161, 161);
-    outline: 0;
-  }
+body .doshboard main {
+  margin-left: 4em;
+}
 
-  .btn{
-    padding: 8px 12px;
-    border-radius: 2.9px;
-    border: none;
-    background-color: rgb(75, 192, 201);
-    font-weight: 600;
-    box-shadow: 14px -2px 28px 6px rgba(34, 60, 80, 0.2);
-    transform: all 0.25s ease;
-  }
+body .doshboard main .all1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) (4);
+  grid-template-columns: repeat(4, 1fr);
+  margin-right: 2.5em;
+}
 
-  .btn:hover{
-    cursor: pointer;
-    box-shadow: 14px -2px 28px 6px rgba(34, 60, 80, 0.2);
-    background-color: rgb(35, 161, 161);;
-  }
+body .doshboard main .subject {
+  margin-right: 1em;
+  margin-top: 3em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) (2);
+  grid-template-columns: repeat(2, 1fr);
+  background-color: whitesmoke;
+  width: 22em;
+  height: 9.5em;
+  padding-bottom: 0.5em;
+}
 
-  .btn:focus{
-    outline: 0;
-  }
+body .doshboard main .subject .right1 {
+  margin-top: 2.5em;
+}
+
+body .doshboard main .subject .right1 #line1 {
+  font-size: 11pt;
+  margin-left: 4em;
+  color: #9b9494;
+  margin-bottom: 0.5em;
+}
+
+body .doshboard main .subject .right1 #line2 {
+  font-size: 25pt;
+  margin-right: 1em;
+}
+
+body .doshboard main .subject .down1 {
+  grid-column: span 2;
+  border-top: 2px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2em;
+  padding-top: 0.5em;
+  margin-right: 2em;
+}
+
+body .doshboard main .subject .down1 img {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+body .doshboard main .subject .down1 p {
+  margin-left: 0.4em;
+  margin-top: 0.2em;
+  color: #9b9494;
+}
+
+body .doshboard main .subject #bg1 {
+  background-color: green;
+  width: 6.5em;
+  height: 6.5em;
+  margin-left: 1.5em;
+  position: relative;
+  margin-top: -1.5em;
+}
+
+body .doshboard main .subject #bg1 img {
+  width: 3em;
+  margin: 1.7em;
+}
+
+body .doshboard main .subject #bg2 {
+  background-color: darkorange;
+  width: 6.5em;
+  height: 6.5em;
+  margin-left: 1.5em;
+  position: relative;
+  margin-top: -1.5em;
+}
+
+body .doshboard main .subject #bg2 img {
+  width: 3em;
+  margin: 1.7em;
+}
+
+body .doshboard main .subject .right2 {
+  margin-top: 2.5em;
+}
+
+body .doshboard main .subject .right2 #line3 {
+  font-size: 11pt;
+  margin-left: 5em;
+  color: #9b9494;
+  margin-bottom: 0.5em;
+}
+
+body .doshboard main .subject .right2 #line4 {
+  margin-left: 0.2em;
+  font-size: 25pt;
+  margin-right: 1em;
+}
+
+body .doshboard main .subject .down2 {
+  grid-column: span 2;
+  border-top: 2px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2em;
+  padding-top: 0.5em;
+  margin-right: 2em;
+}
+
+body .doshboard main .subject .down2 img {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+body .doshboard main .subject .down2 p {
+  margin-left: 0.4em;
+  margin-top: 0.2em;
+  color: #9b9494;
+}
+
+body .doshboard main .subject #bg3 {
+  background-color: blue;
+  width: 6.5em;
+  height: 6.5em;
+  margin-left: 1.5em;
+  position: relative;
+  margin-top: -1.5em;
+}
+
+body .doshboard main .subject #bg3 img {
+  width: 3em;
+  margin: 1.7em;
+}
+
+body .doshboard main .subject .right3 {
+  margin-top: 2.5em;
+}
+
+body .doshboard main .subject .right3 #line5 {
+  font-size: 11pt;
+  margin-left: 4em;
+  color: #9b9494;
+  margin-bottom: 0.5em;
+}
+
+body .doshboard main .subject .right3 #line6 {
+  margin-left: 3.2em;
+  font-size: 25pt;
+  margin-right: 1em;
+}
+
+body .doshboard main .subject .down3 {
+  grid-column: span 2;
+  border-top: 2px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2em;
+  padding-top: 0.5em;
+  margin-right: 2em;
+}
+
+body .doshboard main .subject .down3 img {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+body .doshboard main .subject .down3 p {
+  margin-left: 0.4em;
+  margin-top: 0.2em;
+  color: #9b9494;
+}
+
+body .doshboard main .subject #bg4 {
+  background-color: red;
+  width: 6.5em;
+  height: 6.5em;
+  margin-left: 1.5em;
+  position: relative;
+  margin-top: -1.5em;
+}
+
+body .doshboard main .subject #bg4 img {
+  width: 3em;
+  margin: 1.7em;
+}
+
+body .doshboard main .subject .right4 {
+  margin-top: 2.5em;
+}
+
+body .doshboard main .subject .right4 #line7 {
+  font-size: 11pt;
+  margin-left: 4em;
+  color: #9b9494;
+  margin-bottom: 0.5em;
+}
+
+body .doshboard main .subject .right4 #line8 {
+  margin-left: 1.2em;
+  font-size: 25pt;
+  margin-right: 1em;
+}
+
+body .doshboard main .subject .down4 {
+  grid-column: span 2;
+  border-top: 2px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2em;
+  padding-top: 0.5em;
+  margin-right: 2em;
+}
+
+body .doshboard main .subject .down4 img {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+body .doshboard main .subject .down4 p {
+  margin-left: 0.4em;
+  margin-top: 0.2em;
+  color: #9b9494;
+}
+
+body .doshboard main .all2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) (3);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+body .doshboard main .all2 .block {
+  background-color: whitesmoke;
+  margin-top: 5em;
+  width: 28em;
+  margin-bottom: 5em;
+  padding-left: 1.5em;
+  padding-bottom: 2em;
+}
+
+body .doshboard main .all2 .block .down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 0.5em;
+}
+
+body .doshboard main .all2 .block .down p {
+  margin-left: 0.5em;
+}
+
+body .doshboard main .all2 .block h3 {
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  font-weight: normal;
+  font-size: 19pt;
+}
+
+body .doshboard main .all2 .block .p1 {
+  border-bottom: 0.15em solid #a8a0a0;
+  margin-right: 1.5em;
+  padding-bottom: 1em;
+}
+
+body .doshboard main .all2 .block #foto1 {
+  background-color: green;
+  width: 25em;
+  height: 15em;
+  margin-top: -1.5em;
+}
+
+body .doshboard main .all2 .block #foto1 img {
+  width: 23em;
+  margin: 1em;
+  margin-top: 2em;
+}
+
+body .doshboard main .all2 .block #foto2 {
+  background-color: orange;
+  width: 25em;
+  height: 15em;
+  margin-top: -1.5em;
+}
+
+body .doshboard main .all2 .block #foto2 img {
+  width: 23em;
+  margin: 1em;
+  margin-top: 2em;
+}
+
+body .doshboard main .all2 .block #foto3 {
+  background-color: blue;
+  width: 25em;
+  height: 15em;
+  margin-top: -1.5em;
+}
+
+body .doshboard main .all2 .block #foto3 img {
+  width: 23em;
+  margin: 1em;
+  margin-top: 2em;
+}
+
+body .doshboard main .all3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) (2);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+body .doshboard main .all3 .child {
+  background-color: whitesmoke;
+  width: 44em;
+  height: 29em;
+  margin-bottom: 5em;
+}
+
+body .doshboard main .all3 .child #child1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: orange;
+  width: 41em;
+  height: 4.5em;
+  margin-left: 1.5em;
+  margin-top: -1.5em;
+}
+
+body .doshboard main .all3 .child #child1 h4 {
+  margin-top: 1.2em;
+  color: whitesmoke;
+  font-weight: normal;
+  font-size: 15pt;
+}
+
+body .doshboard main .all3 .child #child1 .tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 4.5em;
+}
+
+body .doshboard main .all3 .child #child1 .tasks img {
+  width: 1.8em;
+  margin-right: 0.5em;
+}
+
+body .doshboard main .all3 .child #child1 #task {
+  margin-left: 1.5em;
+}
+
+body .doshboard main .all3 .child .child2 .line {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 6fr 0.7fr 0.7fr;
+  grid-template-columns: 1fr 6fr 0.7fr 0.7fr;
+  border-bottom: 0.15em solid #988e8e;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  padding-bottom: 1em;
+}
+
+body .doshboard main .all3 .child .child2 .line img {
+  width: 2em;
+  margin-top: 2em;
+  margin-left: 0.3em;
+}
+
+body .doshboard main .all3 .child .child2 .line valye {
+  margin-top: 1.5em;
+  font-size: 14pt;
+}
+
+body .doshboard main .all3 .child .child2 .line input {
+  margin-left: 2em;
+  margin-top: 2.5em;
+  width: 1.5em;
+}
+
+body .doshboard main .all3 .child .child2 #line4 {
+  border-bottom: none;
+}
+
+body .doshboard main .all3 #child3 {
+  background-color: blue;
+  width: 41em;
+  height: 6em;
+  margin-left: 1.5em;
+  color: whitesmoke;
+  margin-top: -1.5em;
+}
+
+body .doshboard main .all3 #child3 h3 {
+  font-weight: normal;
+  font-size: 19pt;
+  padding-top: 0.7em;
+  padding-left: 1.5em;
+}
+
+body .doshboard main .all3 #child3 p {
+  padding-left: 2.4em;
+  margin-top: 0.5em;
+  padding-bottom: 1em;
+}
+
+body .doshboard main .all3 table {
+  height: 17em;
+  width: 40em;
+  margin-left: 2em;
+  padding-bottom: 1em;
+  padding-top: 3em;
+  border-collapse: collapse;
+  margin-top: 1.5em;
+}
+
+body .doshboard main .all3 table td {
+  font-size: 15pt;
+  padding-left: 2.5em;
+  padding-bottom: 1em;
+  border-top: 0.1em solid #9f9191;
+  padding-top: 1em;
+}
+
+body .doshboard main .all3 table .list {
+  color: #41b6b6;
+}
+
+body .doshboard main .all3 table .list1 {
+  border-top: none;
+}
+
+body .doshboard footer {
+  width: 95em;
+  border-top: 0.15em solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 3em;
+  padding-bottom: 4em;
+  margin-left: 2.5em;
+}
+
+body .doshboard footer .bottom1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .doshboard footer .bottom1 h3 {
+  font-size: 13pt;
+  color: #383333;
+}
+
+body .doshboard footer .bottom1 #about {
+  margin-left: 1.5em;
+  margin-right: 2em;
+}
+
+body .doshboard footer .bottom1 #blog {
+  margin-right: 54em;
+  margin-left: 2em;
+}
+
+body .doshboard footer p {
+  color: #383333;
+}
+
