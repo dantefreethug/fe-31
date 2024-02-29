@@ -10,7 +10,7 @@ body {
 }
 
 body .countainer {
-  -ms-grid-columns: 1fr 5fr;
+  grid-columns: 1fr 5fr;
   grid-template-columns: 1fr 5fr;
 }
 
